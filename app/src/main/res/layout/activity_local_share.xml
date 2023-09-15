@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.LocalShareActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#D4DBD4">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="3dp"
+        android:background="@drawable/toolbar_shape"
+        android:elevation="10dp"
+        app:title="toolbar_title"
+        app:titleTextColor="@android:color/white"
+        app:popupTheme="@style/ToolbarMenuPopStyle">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!--  bottom   -->
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/local_tv_message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="内容"
+            android:gravity="center"
+            android:background="@drawable/bottom_tv_unselected"/>
+        <TextView
+            android:id="@+id/local_tv_contacts"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="联系人"
+            android:background="@drawable/bottom_tv_unselected"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/local_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@id/ll_bottom"
+        android:orientation="vertical"/>
+</RelativeLayout>

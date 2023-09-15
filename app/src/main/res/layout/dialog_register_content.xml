@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="250dp">
+
+    <EditText
+        android:id="@+id/dialog_et_name"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="login as: "
+        android:autofillHints="name"
+        android:inputType="text" />
+    <RadioGroup
+        android:id="@+id/dialog_rg_model"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/dialog_rb_server"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="work as server"/>
+        <RadioButton
+            android:id="@+id/dialog_rb_client"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="work as client"/>
+    </RadioGroup>
+
+
+</LinearLayout>

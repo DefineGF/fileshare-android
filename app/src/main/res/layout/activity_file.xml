@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.FileActivity">
+
+    <TextView
+        android:id="@+id/file_tv_content"
+        android:layout_weight="0.6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:text="详细信息"/>
+
+    <Button
+        android:id="@+id/file_btn_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="show"/>
+
+    <Button
+        android:id="@+id/file_btn_create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="create"/>
+    <Button
+        android:id="@+id/file_btn_local"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="本地"/>
+
+
+</LinearLayout>

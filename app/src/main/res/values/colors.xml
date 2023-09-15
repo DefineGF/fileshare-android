@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4DB6AC</color>
+    <color name="colorPrimaryDark">#09ECCD</color>
+    <color name="colorAccent">#F06292</color>
+
+    <color name="colorWidgetBg">#9575CD</color>
+
+    <color name="colorSendBtn">#AED581</color>
+    <color name="colorTvSelected">#FFF176</color>
+    <color name="colorTvUnselected">#4DD0E1</color>
+
+    <color name="colorFragmentBg">#DFF0CD</color>
+    <color name="colorItemText">#9575CD</color>
+
+    <color name="colorFBTint">#81C784</color>
+    <color name="colorTransparent">@android:color/transparent</color>
+</resources>

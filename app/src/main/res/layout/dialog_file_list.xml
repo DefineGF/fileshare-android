@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:background="@drawable/file_dialog_bg">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_selector"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_bottom_btn" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="取消"
+            android:background="@drawable/btn_in_dialog_file_list"
+            tools:ignore="ButtonStyle"
+            android:elevation="5dp" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="确定"
+            android:background="@drawable/btn_in_dialog_file_list"
+            tools:ignore="ButtonStyle"
+            android:elevation="5dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

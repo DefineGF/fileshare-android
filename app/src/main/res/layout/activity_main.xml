@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/shi"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="50dp"/>
+
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/main_btn_local"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/send_btn_bg"
+            android:text="局域网"
+            android:textSize="19sp"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"/>
+    </LinearLayout>
+</LinearLayout>
